@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Register</h2>
+
+<form method="POST">
+
+<input name="firstname" class="form-control mb-2" placeholder="First Name">
+
+<input name="lastname" class="form-control mb-2" placeholder="Last Name">
+
+<input name="mobile" class="form-control mb-2" placeholder="Mobile">
+
+<input name="age" class="form-control mb-2" placeholder="Age">
+
+<input name="gender" class="form-control mb-2" placeholder="Gender">
+
+<input name="education" class="form-control mb-2" placeholder="Education">
+
+<input name="email" class="form-control mb-2" placeholder="Email">
+
+<input name="username" class="form-control mb-2" placeholder="Username">
+
+<input type="password" name="password" class="form-control mb-2" placeholder="Password">
+
+<button class="btn btn-success">
+Create Account
+</button>
+
+</form>
+
+{% endblock %}

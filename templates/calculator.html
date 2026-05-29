@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Salary Calculator</h2>
+
+<form action="/calculate" method="POST">
+
+<select name="os" class="form-control mb-2">
+<option>Linux</option>
+<option>Windows</option>
+<option>Mac</option>
+</select>
+
+<select name="cloud" class="form-control mb-2">
+<option>AWS</option>
+<option>Azure</option>
+<option>GCP</option>
+</select>
+
+<select name="admin" class="form-control mb-2">
+<option>Linux</option>
+<option>Windows</option>
+</select>
+
+<label>Jenkins</label>
+<select name="jenkins" class="form-control mb-2">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Git</label>
+<select name="git" class="form-control mb-2">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Ansible</label>
+<select name="ansible" class="form-control mb-2">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Docker & Kubernetes</label>
+<select name="docker" class="form-control mb-2">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Prometheus Grafana</label>
+<select name="prometheus" class="form-control mb-2">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<label>Terraform</label>
+<select name="terraform" class="form-control mb-2">
+<option>Yes</option>
+<option>No</option>
+</select>
+
+<input
+type="number"
+name="experience"
+min="1"
+max="25"
+class="form-control mb-3"
+placeholder="Years of Experience">
+
+<button class="btn btn-success">
+Calculate Salary
+</button>
+
+</form>
+
+{% endblock %}

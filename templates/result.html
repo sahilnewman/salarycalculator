@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>
+Salary Report
+</h2>
+
+<table class="table">
+
+<tr>
+<td>Experience</td>
+<td>{{ experience }}</td>
+</tr>
+
+<tr>
+<td>Skill Score</td>
+<td>{{ score }}</td>
+</tr>
+
+<tr>
+<td>Estimated Salary</td>
+<td>
+₹ {{ "{:,.0f}".format(salary) }}
+</td>
+</tr>
+
+</table>
+
+<a href="/calculator"
+class="btn btn-primary">
+Calculate Again
+</a>
+
+{% endblock %}

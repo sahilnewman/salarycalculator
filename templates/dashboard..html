@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>
+Welcome {{ current_user.firstname }}
+</h2>
+
+<a href="/calculator"
+class="btn btn-primary">
+
+DevOps Salary Calculator
+
+</a>
+
+<a href="/logout"
+class="btn btn-danger">
+
+Logout
+
+</a>
+
+{% endblock %}
